@@ -24,7 +24,7 @@ class profile_haproxy (
   }
 
   if ( $backend ) {
-    ensure_resources( 'haproxy::frontend', $frontend )
+    ensure_resources( 'haproxy::backend', $backend )
   }
 
   if ( $listen ) {
