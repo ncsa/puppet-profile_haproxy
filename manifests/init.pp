@@ -3,10 +3,10 @@
 # @example
 #   include profile_haproxy
 class profile_haproxy (
-  Hash $balancemember   = undef,
-  Hash $firewall        = undef,
-  Hash $listen          = undef,
-  Hash $sslcertificates = undef,
+  $balancemember   = undef,
+  $firewall        = undef,
+  $listen          = undef,
+  $sslcertificates = undef,
 ) {
 
   ## SETUP SYSCTL ? e.g. ip forward, ip_nonlocal_bind, etc
