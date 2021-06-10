@@ -7,7 +7,6 @@
 ### Classes
 
 * [`profile_haproxy`](#profile_haproxy): Configure haproxy
-* [`profile_haproxy::firewall`](#profile_haproxyfirewall): A short summary of the purpose of this class
 
 ## Classes
 
@@ -23,15 +22,44 @@ Configure haproxy
 include profile_haproxy
 ```
 
-### <a name="profile_haproxyfirewall"></a>`profile_haproxy::firewall`
+#### Parameters
 
-A description of what this class does
+The following parameters are available in the `profile_haproxy` class:
 
-#### Examples
+* [`balancemember`](#balancemember)
+* [`firewall`](#firewall)
+* [`listen`](#listen)
+* [`sslcertificates`](#sslcertificates)
 
-##### 
+##### <a name="balancemember"></a>`balancemember`
 
-```puppet
-include profile_haproxy::firewall
-```
+Data type: `Hash`
+
+
+
+Default value: ``undef``
+
+##### <a name="firewall"></a>`firewall`
+
+Data type: `Hash`
+
+
+
+Default value: ``undef``
+
+##### <a name="listen"></a>`listen`
+
+Data type: `Hash`
+
+
+
+Default value: ``undef``
+
+##### <a name="sslcertificates"></a>`sslcertificates`
+
+Data type: `Hash`
+
+
+
+Default value: ``undef``
 
